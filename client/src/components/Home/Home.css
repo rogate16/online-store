@@ -1,0 +1,210 @@
+html,
+body {
+  max-width: 100%;
+}
+
+.Main {
+  max-width: 100%;
+  margin: 30px;
+}
+
+.Title {
+  text-align: center;
+}
+
+.Main .Prices {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Main .Prices label {
+  padding-right: 10px;
+}
+
+.Main .Prices input {
+  padding: 7px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.Main .Prices input:focus {
+  background-color: skyblue;
+}
+
+.Main .Prices .Min-Price {
+  flex: 25%;
+  justify-content: flex-start;
+}
+
+.Main .Prices .Max-Price {
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.Products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Product {
+  padding-top: 20px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Product .Card {
+  width: 300px;
+  height: 500px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 5px grey;
+}
+
+.Product .Card img {
+  height: 250px;
+  width: 250px;
+}
+
+.Product .Card .Price {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  background-color: green;
+  padding: 10px;
+  border: 2px solid black;
+  color: white;
+  font-weight: bold;
+}
+
+.Product .Buy .Icon {
+  font-size: 50px;
+}
+
+.Product .Buy .Icon:hover {
+  color: black;
+}
+
+.Count {
+  border-radius: 70%;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+
+  background: #fff;
+  color: #666;
+  text-align: center;
+
+  font: 50px Arial, sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .Main {
+    max-width: 100%;
+    margin-left: 8px;
+  }
+
+  .Title {
+    font-size: 10px;
+  }
+
+  .Main .Prices {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Main .Prices label {
+    padding-right: 10px;
+  }
+
+  .Main .Prices input {
+    padding: 7px;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 5px;
+  }
+
+  .Main .Prices .Min-Price {
+    flex: 100%;
+    justify-content: flex-start;
+  }
+
+  .Main .Prices .Max-Price {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .Products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .Product {
+    padding-top: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Product .Card {
+    width: 300px;
+    height: 500px;
+    margin-right: 0px;
+    box-sizing: border-box;
+  }
+
+  .Product .Card img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .Product .Card .Price {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    background-color: green;
+    padding: 10px;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+  }
+
+  .Product .Buy .Icon:first-child {
+    margin-top: 100px;
+    font-size: 50px;
+  }
+
+  .Product .Buy .Icon:hover {
+    color: black;
+  }
+
+  .Count {
+    border-radius: 70%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    background: #fff;
+    color: #666;
+    text-align: center;
+
+    font: 50px Arial, sans-serif;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Product {
+    flex-direction: row;
+  }
+}

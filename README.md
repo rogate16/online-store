@@ -17,3 +17,5 @@ A simple online store app using React and Express
 - Remove products from cart
 - Display list of orders and total price
 - Forward orders to a Whatsapp chat
+
+![Preview](https://github.com/rogate16/online-store/blob/main/server/static/online-store.mp4?raw=true)
